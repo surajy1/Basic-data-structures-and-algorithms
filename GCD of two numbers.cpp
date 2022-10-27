@@ -1,7 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//Euclidean algorithm
+/*********************/
+// GDC/HCF of two numbers
+
 int gcd(int a, int b){
 
     if(b==0) 
@@ -11,6 +13,8 @@ int gcd(int a, int b){
         return gcd(b, a%b);
 
 }
+
+/*********************/
 
 int main() {
 	
