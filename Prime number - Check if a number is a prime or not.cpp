@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-//Function to check if a number is a prime
 /**********************************/
+//Function to check if a number is a prime
 bool isPrime(int n){
     if(n==1) return false;
 
@@ -17,6 +17,9 @@ bool isPrime(int n){
     
     return true;
 }
+
+// TC: O(sqrt(n))
+
 /**********************************/
 
 int main(){
