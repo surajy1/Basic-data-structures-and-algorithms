@@ -2,7 +2,7 @@
 using namespace std;
 
 /***********************************************/
-// Seive of Erotosthenes
+// Sieve of Eratosthenes
 // Print all Prime numbers that are <= n
 
 void sieve(int n)
