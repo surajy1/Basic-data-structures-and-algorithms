@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-#define ull unsigned long long
 #define mod 1000000007
 
 ll power(ll a, ll x) {
@@ -24,9 +23,12 @@ ll power(ll a, ll x) {
 
 int main() {
 
-		cin >> n;
+	ll base, exponent;
 
-		cout << power(2, n - 1);
+	cin >> base;
+	cin >> exponent;
+
+	cout << power(base, exponent);
 
 	return 0;
 }
