@@ -28,7 +28,7 @@ int main() {
 	cin >> base;
 	cin >> exponent;
 
-	cout << power(base, exponent);
+	cout << power(base, exponent);  // Output in modulo 10^9 + 7 (see line no. 4)
 
 	return 0;
 }
