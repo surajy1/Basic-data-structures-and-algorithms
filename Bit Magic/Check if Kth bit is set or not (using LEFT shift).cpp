@@ -19,7 +19,7 @@ int main() {
 
 	cin >> n >> k;
 
-	isKthBitSet(n, k);
+	cout << isKthBitSet(n, k);
 
 	return 0;
 }
