@@ -14,7 +14,7 @@ ll fac[mx];
 void preFac() {
 	fac[0] = 1;
 
-	for (ll j = 1; j <= mx; j++)
+	for (ll j = 1; j < mx; j++)
 	{	
 		fac[j] = (j * fac[j - 1]);
 		fac[j] %= modulo;
