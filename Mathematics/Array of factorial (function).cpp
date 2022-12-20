@@ -15,7 +15,10 @@ void preFac() {
 	fac[0] = 1;
 
 	for (ll j = 1; j <= mx; j++)
-		fac[j] = (j * fac[j - 1]) % modulo;
+	{	
+		fac[j] = (j * fac[j - 1]);
+		fac[j] %= modulo;
+	}
 }
 
 // TC: O(mx)
