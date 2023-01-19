@@ -1,10 +1,12 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <math.h>
 using namespace std;
 
 /****************************/
 /*
 	Power Set using bitwise operators
 	(generate subsets of a given string)
+	Note: order of subsets printed doesn't matter
 
 	Ex. 1:
 	IP: "abc"
