@@ -11,7 +11,7 @@ int fact(int n, int k) {
 }
 
 // TC: O(n)
-// SC: O(n)
+// Aux. space: O(n)
 
 int main() {
 
