@@ -10,7 +10,7 @@ void print1ToN(int n, int k) {
 	print1ToN(n - 1, k + 1);
 }
 // TC: O(n)
-// SC: O(n)
+// Aux. Space: O(n)
 
 int main() {
 
