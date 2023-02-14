@@ -1,4 +1,4 @@
-###How to think recursively?
+# How to think recursively?
 
 **Thinking recursively involves breaking down a problem into smaller subproblems and solving each subproblem individually. Here are some steps that can help you think recursively:**
 
