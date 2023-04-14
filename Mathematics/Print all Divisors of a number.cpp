@@ -14,9 +14,9 @@ void printDivisors(int n) {
             cout << i << " ";
     
     // Print all divisors from sqrt(n) (inclusive) to n (inclusive)
-    for (; i >= 1; i++)
+    for (; i >= 1; i--)
         if (n % i == 0)
-            cout << i << " ";
+            cout << n / i << " ";
 }
 
 // TC: O(sqrt(n)), SC: O(1)
