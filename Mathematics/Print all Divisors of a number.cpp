@@ -14,7 +14,7 @@ void printDivisors(int n) {
             cout << i << " ";
     
     // Print all divisors from sqrt(n) (inclusive) to n (inclusive)
-    for (; i >= 1; i--)
+    for (i; i >= 1; i--)
         if (n % i == 0)
             cout << n / i << " ";
 }
