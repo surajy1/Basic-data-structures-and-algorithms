@@ -3,7 +3,16 @@ using namespace std;
 
 /**********************************/
 // Print divisors of a given number
-
+/*
+    Input1: 50
+    Output1: 1 2 5 10 25 50
+    
+    Input2: 36
+    Output2: 1 2 3 4 6 9 12 18 36
+    
+    Input3: 29
+    Output3: 1 29
+*/
 void printDivisors(int n) {
 
     int i;
