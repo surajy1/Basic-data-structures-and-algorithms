@@ -19,8 +19,12 @@ void findTwoOddOccuring(int arr[], int n) {
 
 	for (int i = 0; i < n; i++)
 		XORall = XORall ^ arr[i];
+	
+	// cout << "XORall: " << XORall << "\n";
 
 	int sn = XORall & (~(XORall - 1));
+	
+	// cout << "sn = XORall & (~(XORall - 1)) = " << XORall << " & (~(" << (XORall - 1) << ")) = " << XORall << " & " << (~(XORall - 1)) << " = " << sn << "\n";
 
 	for (int i = 0; i < n; i++)
 	{
