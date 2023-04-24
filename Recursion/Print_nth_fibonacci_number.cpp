@@ -3,11 +3,11 @@ using namespace std;
 
 // Print nth fibnacci number
 
-int fib(int n) {
+int nthFib(int n) {
 	if (n <= 1)
 		return n;
 
-	return fib(n - 1) + fib(n - 2);
+	return nthFib(n - 1) + nthFib(n - 2);
 }
 
 int main() {
@@ -15,7 +15,7 @@ int main() {
 	int n;
 	cin >> n;
 
-	cout << fib(n);
+	cout << nthFib(n);
 
 	return 0;
 }
