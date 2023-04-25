@@ -133,7 +133,7 @@ void pattern12(int n) {
 		}
 		//numbers
 		for (int j = 1; j <= i; j++) {
-			cout << j;
+			cout << i - j + 1;
 		}
 		cout << "\n";
 		spaces -= 2;
