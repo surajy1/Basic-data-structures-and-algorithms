@@ -270,10 +270,10 @@ void pattern11(int n) {
 For n = 5
 ```
 1        1
-12      12
-123    123
-1234  1234
-1234512345
+12      21
+123    321
+1234  4321
+1234554321
 ```
 Code:
 ```cpp
@@ -290,7 +290,7 @@ void pattern12(int n) {
 		}
 		//numbers
 		for (int j = 1; j <= i; j++) {
-			cout << j;
+			cout << i - j + 1;
 		}
 		cout << "\n";
 		spaces -= 2;
