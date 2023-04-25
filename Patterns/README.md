@@ -30,4 +30,5 @@ void pattern1(int n) {
 ```
 	
 </details>
+
 ### Pattern 2
