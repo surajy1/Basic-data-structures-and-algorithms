@@ -15,7 +15,7 @@ For n = 5.
 * * * * *
 * * * * *
 ```
-
+Code:
 ```cpp
 void pattern1(int n) {
 	for (int i = 0; i < n; i++) {
