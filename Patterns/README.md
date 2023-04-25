@@ -591,4 +591,4 @@ void pattern22(int n) {
 
 
 ## Reference
-- [Solve any Pattern Question - Trick Explained | 22 Patterns in 1 Shot | Strivers A2Z DSA Course](https://youtu.be/tNm_NNSB3_w)
+- [Solve any Pattern Question - Trick Explained | 22 Patterns in 1 Shot | Strivers A2Z DSA Course](https://youtu.be/tNm_NNSB3_w) ([Practice](https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/))
