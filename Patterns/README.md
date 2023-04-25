@@ -320,3 +320,275 @@ void pattern13(int n) {
 	}
 }
 ```
+
+### Pattern 14
+For n = 5
+```
+A
+A B
+A B C
+A B C D
+A B C D E
+```
+Code:
+```cpp
+void pattern14(int n) {
+	for (int i = 0; i < n; i++) {
+		for (char ch = 'A'; ch <= 'A' + i; ch++) {
+			cout << ch << " ";
+		}
+		cout << "\n";
+	}
+}
+```
+
+### Pattern 15
+For n = 5
+```
+A B C D E
+A B C D
+A B C
+A B
+A
+```
+Code:
+```cpp
+void pattern15(int n) {
+	for (int i = 0; i < n; i++) {
+		for (char ch = 'A'; ch <= 'A' + (n - i - 1); ch++) {
+			cout << ch << " ";
+		}
+		cout << "\n";
+	}
+}
+```
+
+### Pattern 16
+For n = 4
+```
+A B C D
+A B C
+A B
+A
+```
+Code:
+```cpp
+void pattern16(int n) {
+	for (int i = 0; i < n; i++) {
+		char ch = 'A' + i;
+		for (int j = 0; j <= i; j++) {
+			cout << ch << " ";
+		}
+		cout << "\n";
+	}
+}
+```
+
+### Pattern 17
+For n = 5
+```
+    A
+   ABA
+  ABCBA
+ ABCDCBA
+ABCDEDCBA
+```
+Code:
+```cpp
+void pattern17(int n) {
+	for (int i = 0; i < n; i++) {
+		// space
+		for (int j = 0; j < n - i - 1; j++) {
+			cout << " ";
+		}
+		// characters
+		char ch = 'A';
+		int breakpoint = (2 * i + 1) / 2;
+		for (int j = 1; j <= 2 * i + 1; j++) {
+			cout << ch;
+			if (j <= breakpoint) ch++;
+			else ch--;
+		}
+		// space
+		for (int j = 0; j < n - i - 1; j++) {
+			cout << " ";
+		}
+		cout << "\n";
+	}
+}
+```
+
+### Pattern 18
+For n = 5
+```
+E
+D E
+C D E
+B C D E
+A B C D E
+```
+Code:
+```cpp
+void pattern18(int n) {
+	for (int i = 0; i < n; i++) {
+		for (char ch = 'E' - i; ch <= 'E'; ch++) {
+			cout << ch << " ";
+		}
+		cout << "\n";
+	}
+}
+```
+
+### Pattern 19
+For n = 5
+```
+**********
+****  ****
+***    ***
+**      **
+*        *
+*        *
+**      **
+***    ***
+****  ****
+**********
+```
+Code:
+```cpp
+void pattern19(int n) {
+	int spaces = 0;
+	for (int i = 0; i < n; i++) {
+		// stars
+		for (int j = 0; j < n - i; j++) {
+			cout << "*";
+		}
+		// spaces
+		for (int j = 0; j < spaces; j++) {
+			cout << " ";
+		}
+		// stars
+		for (int j = 0; j < n - i; j++) {
+			cout << "*";
+		}
+		spaces += 2;
+		cout << "\n";
+	}
+	spaces = 2 * n - 2;
+	for (int i = 0; i < n; i++) {
+		// stars
+		for (int j = 0; j <= i; j++) {
+			cout << "*";
+		}
+		// spaces
+		for (int j = 0; j < spaces; j++) {
+			cout << " ";
+		}
+		// stars
+		for (int j = 0; j <= i; j++) {
+			cout << "*";
+		}
+		spaces -= 2;
+		cout << "\n";
+	}
+}
+```
+
+### Pattern 20
+For n = 5
+```
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+```
+Code:
+```cpp
+void pattern20(int n) {
+	int spaces = 2 * n - 2;
+	for (int i = 1; i <= 2 * n - 1; i++) {
+		int stars = i;
+		if (i > n) stars = 2 * n - i;
+
+		// stars
+		for (int j = 1; j <= stars; j++) {
+			cout << "*";
+		}
+
+		// spaces
+		for (int j = 1; j <= spaces; j++) {
+			cout << " ";
+		}
+
+		// stars
+		for (int j = 1; j <= stars; j++) {
+			cout << "*";
+		}
+		cout << "\n";
+		if (i < n) spaces -= 2;
+		else spaces += 2;
+	}
+}
+```
+
+### Pattern 21
+For n = 5
+```
+*****
+*   *
+*   *
+*   *
+*****
+```
+Code:
+```cpp
+void pattern21(int n) {
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			if (i == 0 || j == 0 || i == n - 1 || j == n - 1) {
+				cout << "*";
+			}
+			else
+				cout << " ";
+		}
+		cout << "\n";
+	}
+}
+```
+
+### Pattern 22
+For n = 5
+```
+5 5 5 5 5 5 5 5 5
+5 4 4 4 4 4 4 4 5
+5 4 3 3 3 3 3 4 5
+5 4 3 2 2 2 3 4 5
+5 4 3 2 1 2 3 4 5
+5 4 3 2 2 2 3 4 5
+5 4 3 3 3 3 3 4 5
+5 4 4 4 4 4 4 4 5
+5 5 5 5 5 5 5 5 5
+```
+Code:
+```cpp
+void pattern22(int n) {
+	for (int i = 0; i < 2 * n - 1; i++) {
+		for (int j = 0; j < 2 * n - 1; j++) {
+			int top = i;
+			int left = j;
+			int right  = (2 * n - 2) - j;
+			int down = (2 * n - 2) - i;
+			cout << (n - min(min(top, down), min(left, right))) << " ";
+		}
+		cout << "\n";
+	}
+}
+```
+
+
+## Reference
+- [Solve any Pattern Question - Trick Explained | 22 Patterns in 1 Shot | Strivers A2Z DSA Course](https://youtu.be/tNm_NNSB3_w)
