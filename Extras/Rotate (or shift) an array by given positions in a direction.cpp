@@ -56,7 +56,6 @@ int main() {
 
 
 /*
-  This problem took me around 20 minutes to solve.
 
   Time complexity: O(n)
   Space complexity: O(n)
