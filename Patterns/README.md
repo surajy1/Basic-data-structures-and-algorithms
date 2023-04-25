@@ -15,10 +15,8 @@ For n = 5.
 * * * * *
 * * * * *
 ```
-<details>
-	
-<summary>See code</summary>
-`
+
+```cpp
 void pattern1(int n) {
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
@@ -27,8 +25,6 @@ void pattern1(int n) {
 		cout << "\n";
 	}
 }
-`
-	
-</details>
+```
 
 ### Pattern 2
