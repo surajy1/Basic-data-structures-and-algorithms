@@ -12,4 +12,5 @@ void reverseArr(int i, int arr[], int n) {
 
 	reverseArr(i + 1, arr, n);
 }
+// TC: O(n)
 ```
