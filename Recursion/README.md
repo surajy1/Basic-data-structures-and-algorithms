@@ -5,7 +5,7 @@
 ```cpp
 // Input: arr = {1,2,3,4,5}
 // Output: arr = {5,4,3,2,1}
-void reverseArr(int i, int arr[], int n) {
+void reverseArr(int i, int arr[], int n) { // call: reverseArr(0, arr, arr.size())
 	if (i >= n / 2)
 		return;
 	swap(arr[i], arr[n - i - 1]);
