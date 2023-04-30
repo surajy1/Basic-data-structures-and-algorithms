@@ -14,3 +14,52 @@ void reverseArr(int i, int arr[], int n) { // call: reverseArr(0, arr, arr.size(
 }
 // TC: O(n)
 ```
+
+### Check a palindrome
+[Code 1](https://github.com/y-suraj/Data-structures-and-algorithms/blob/main/Recursion/Palindrome_check_using_recursion_for_strings.cpp):
+```cpp
+// Return 1(true) if given string is a palindrome, else return 0(false)
+// Input1: "level"
+// Output1: 1
+// Input2: "abc"
+// Output2: 0
+bool isPal(string &s, int start, int end) {
+
+	if (start >= end)
+		return true;
+
+	return (s[start] == s[end]) &&
+	       isPal(s, start + 1, end - 1);
+}
+// TC: O(n)
+// Aux. Space: O(n)
+
+int main()
+{
+	string str;
+	cin >> str;
+
+	cout << isPal(str, 0, str.size() - 1);
+	return 0;
+}
+```
+
+[Code 2](https://github.com/y-suraj/Data-structures-and-algorithms/blob/main/Recursion/Palindrome_check_using_recursion_for_strings_2(tuf).cpp)
+- Reference: [Re 4. Problems on Functional Recursion | Strivers A2Z DSA Course](https://youtu.be/twuC1F6gLI8?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz)
+```cpp
+bool isPal(int i, string &s) {
+	if (i >= s.size() / 2)
+		return true;
+	if (s[i] != s[s.size() - i - 1])
+		return false;
+	return isPal(i + 1, s);
+}
+
+int main() {
+
+	string s = "level";
+	cout << isPal(0, s);
+
+	return 0;
+}
+```
