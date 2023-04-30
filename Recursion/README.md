@@ -16,7 +16,7 @@ void reverseArr(int i, int arr[], int n) { // call: reverseArr(0, arr, arr.size(
 ```
 
 ### Check a palindrome
-[Code 1](https://github.com/y-suraj/Data-structures-and-algorithms/blob/main/Recursion/Palindrome_check_using_recursion_for_strings.cpp):
+***[Code 1](https://github.com/y-suraj/Data-structures-and-algorithms/blob/main/Recursion/Palindrome_check_using_recursion_for_strings.cpp):***
 ```cpp
 // Return 1(true) if given string is a palindrome, else return 0(false)
 // Input1: "level"
@@ -44,7 +44,7 @@ int main()
 }
 ```
 
-[Code 2](https://github.com/y-suraj/Data-structures-and-algorithms/blob/main/Recursion/Palindrome_check_using_recursion_for_strings_2(tuf).cpp)
+***[Code 2](https://github.com/y-suraj/Data-structures-and-algorithms/blob/main/Recursion/Palindrome_check_using_recursion_for_strings_2(tuf).cpp)***
 - Reference: [Re 4. Problems on Functional Recursion | Strivers A2Z DSA Course](https://youtu.be/twuC1F6gLI8?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz)
 ```cpp
 bool isPal(int i, string &s) {
