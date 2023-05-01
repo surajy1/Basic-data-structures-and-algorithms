@@ -1,7 +1,6 @@
 # Sorting
 
-### Selection Sort
-***[Code](/Sorting/Selection%20Sort.cpp):***
+### [Selection Sort](/Sorting/Selection%20Sort.cpp)
 ```cpp
 // Selection sort
 // Input: 3 6 4 9 5
