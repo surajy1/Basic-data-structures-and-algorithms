@@ -63,3 +63,44 @@ int main() {
 	return 0;
 }
 ```
+
+### Print nth fibonacci number
+***[Code 1](https://github.com/y-suraj/Data-structures-and-algorithms/blob/main/Recursion/Print_nth_fibonacci_number.cpp):***
+```cpp
+int nthFib(int n) {
+	if (n <= 1)
+		return n;
+
+	return nthFib(n - 1) + nthFib(n - 2);
+}
+```
+
+***[Code 2](https://github.com/y-suraj/Data-structures-and-algorithms/blob/main/Recursion/Print_nth_fibonacci_number_2(tuf).cpp)***
+- Reference: [Re 5. Multiple Recursion Calls | Problems | Strivers A2Z DSA Course](https://youtu.be/kvRjNm4rVBE?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz)
+```cpp
+// Print nth fibonacci number
+// Input1: n = 4
+// Output1: 3
+// Input2: n = 8
+// Output2: 21
+
+int nthFact(int n) {
+	if (n <= 1)
+		return n;
+
+	int last = nthFact(n - 1);
+	int sLast = nthFact(n - 2);
+
+	return last + sLast;
+}
+// TC: O(pow(2, n)), exponential
+int main() {
+
+	int n;
+	cin >> n;
+
+	cout << nthFact(n);
+
+	return 0;
+}
+```
