@@ -44,7 +44,7 @@ int main()
 }
 ```
 
-***[Code 2](https://github.com/y-suraj/Data-structures-and-algorithms/blob/main/Recursion/Palindrome_check_using_recursion_for_strings_2(tuf).cpp)***
+***[Code 2](https://github.com/y-suraj/Data-structures-and-algorithms/blob/main/Recursion/Palindrome_check_using_recursion_for_strings_2(tuf).cpp):***
 - Reference: [Re 4. Problems on Functional Recursion | Strivers A2Z DSA Course](https://youtu.be/twuC1F6gLI8?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz)
 ```cpp
 bool isPal(int i, string &s) {
@@ -64,6 +64,7 @@ int main() {
 }
 ```
 
+
 ### Print nth fibonacci number
 ***[Code 1](https://github.com/y-suraj/Data-structures-and-algorithms/blob/main/Recursion/Print_nth_fibonacci_number.cpp):***
 ```cpp
@@ -75,7 +76,7 @@ int nthFib(int n) {
 }
 ```
 
-***[Code 2](https://github.com/y-suraj/Data-structures-and-algorithms/blob/main/Recursion/Print_nth_fibonacci_number_2(tuf).cpp)***
+***[Code 2](https://github.com/y-suraj/Data-structures-and-algorithms/blob/main/Recursion/Print_nth_fibonacci_number_2(tuf).cpp):***
 - Reference: [Re 5. Multiple Recursion Calls | Problems | Strivers A2Z DSA Course](https://youtu.be/kvRjNm4rVBE?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz)
 ```cpp
 // Print nth fibonacci number
