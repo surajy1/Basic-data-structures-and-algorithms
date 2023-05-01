@@ -66,7 +66,7 @@ int main() {
 
 
 ### Print nth fibonacci number
-***[Code 1](Recursion/Print_nth_fibonacci_number.cpp):***
+***[Code 1](/Print_nth_fibonacci_number.cpp):***
 ```cpp
 int nthFib(int n) {
 	if (n <= 1)
