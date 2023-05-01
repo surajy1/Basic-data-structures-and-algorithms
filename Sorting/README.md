@@ -23,3 +23,7 @@ void selection_sort(int arr[], int n) {
 // 	=> O((n * (n+1))/2)
 // TC: O(pow(n, 2)), where n is the number of elements in the array
 ```
+
+
+### Reference
+	- [Sorting - Part 1 | Selection Sort, Bubble Sort, Insertion Sort | Strivers A2Z DSA Course](https://youtu.be/HGk_ypEuS24?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz)
