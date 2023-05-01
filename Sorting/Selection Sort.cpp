@@ -17,7 +17,7 @@ void selection_sort(int arr[], int n) {
 		swap(arr[i], arr[min_id]);
 	}
 }
-// TC: O(n + (n-1) + (n-2) + (n-3) ... 2 + 1)
+// TC: O(n + (n-1) + (n-2) + (n-3) +...+ 2 + 1)
 // 	=> O((n * (n+1))/2)
 // TC: O(pow(n, 2)), where n is the number of elements in the array
 int main() {
