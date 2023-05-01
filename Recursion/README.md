@@ -29,8 +29,7 @@
 		if (start >= end)
 			return true;
 
-		return (s[start] == s[end]) &&
-			   isPal(s, start + 1, end - 1);
+		return (s[start] == s[end]) && isPal(s, start + 1, end - 1);
 	}
 	// TC: O(n)
 	// Aux. Space: O(n)
@@ -72,7 +71,7 @@
 	int nthFib(int n) {
 		if (n <= 1)
 			return n;
-
+			
 		return nthFib(n - 1) + nthFib(n - 2);
 	}
 	```
