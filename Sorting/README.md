@@ -42,7 +42,7 @@ void bubble_sort(int arr[], int n) {
 // TC: O(n + (n-1) + (n-2) + (n-3) +...+ 2)
 // 	=> O((n * (n+1))/2)
 // TC: O(pow(n, 2)), for worst and average cases
-//     O(n), for sorted arrays
+//     O(n), for best case (sorted arrays), where n is the number of elements in the array
 ```
 
 ### [Insertion Sort](/Sorting/Insertion%20Sort.cpp)
@@ -61,7 +61,7 @@ void insertion_sort(int arr[], int n) {
 // TC: O(n + (n-1) + (n-2) + (n-3) +...+ 2 + 1)
 // 	=> O((n * (n+1))/2)
 // TC: O(pow(n, 2)), for worst and average cases
-//     O(n), for sorted arrays, where n is the number of elements in the array
+//     O(n), for best case (sorted arrays), where n is the number of elements in the array
 ```
 
 ## Reference
