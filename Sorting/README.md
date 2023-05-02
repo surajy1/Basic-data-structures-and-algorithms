@@ -39,7 +39,7 @@ void bubble_sort(int arr[], int n) {
 		if (didSwap == 0) break;
 	}
 }
-// TC: O(n + (n-1) + (n-2) + (n-3) ... 2 + 1)
+// TC: O(n + (n-1) + (n-2) + (n-3) +...+ 2)
 // 	=> O((n * (n+1))/2)
 // TC: O(pow(n, 2)), for worst and average cases
 //     O(n), for sorted arrays
