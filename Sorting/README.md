@@ -1,6 +1,7 @@
 # Sorting
 
 ### [Selection Sort](/Sorting/Selection%20Sort.cpp)
+- Algorithm: Select minimums and swap
 ```cpp
 // Selection sort
 // Input: 3 6 4 9 5
@@ -24,6 +25,7 @@ void selection_sort(int arr[], int n) {
 ```
 
 ### [Bubble Sort](/Sorting/Bubble%20Sort.cpp)
+- Algorithm: Pushes the maximum to the last by **adjacent swaps**
 ```cpp
 // Bubble sort
 
@@ -46,6 +48,7 @@ void bubble_sort(int arr[], int n) {
 ```
 
 ### [Insertion Sort](/Sorting/Insertion%20Sort.cpp)
+- Algorithm: Takes an element and places it in its correct order/position
 ```cpp
 // Insertion sort
 
@@ -65,6 +68,7 @@ void insertion_sort(int arr[], int n) {
 ```
 
 ### [Merge Sort](/Sorting/Merge%20Sort.cpp)
+- Algorithm: Divide and merge
 ```cpp
 // Merge Sort
 /*
