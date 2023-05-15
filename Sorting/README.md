@@ -184,6 +184,6 @@ vector<int> quick_sort(vector<int> &arr) {
 ```
 
 ## Reference
-- [Sorting - Part 1 | Selection Sort, Bubble Sort, Insertion Sort | Strivers A2Z DSA Course](https://youtu.be/HGk_ypEuS24?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz) Articles - [(Selection Sort)](https://takeuforward.org/sorting/selection-sort-algorithm/), [(Bubble Sort)](https://takeuforward.org/data-structure/bubble-sort-algorithm/), [(Insertion Sort)](https://takeuforward.org/data-structure/insertion-sort-algorithm/)
-- [Merge Sort | Algorithm | Pseudocode | Dry Run | Code | Strivers A2Z DSA Course](https://youtu.be/ogjf7ORKfd8) [(Article)](https://takeuforward.org/data-structure/merge-sort-algorithm/)
-- [Quick Sort For Beginners | Strivers A2Z DSA Course](https://youtu.be/WIrA4YexLRQ) [(Article)](https://takeuforward.org/data-structure/quick-sort-algorithm/)
+- [Sorting - Part 1 | Selection Sort, Bubble Sort, Insertion Sort | Strivers A2Z DSA Course](https://youtu.be/HGk_ypEuS24?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz), Articles - [(Selection Sort)](https://takeuforward.org/sorting/selection-sort-algorithm/), [(Bubble Sort)](https://takeuforward.org/data-structure/bubble-sort-algorithm/), [(Insertion Sort)](https://takeuforward.org/data-structure/insertion-sort-algorithm/)
+- [Merge Sort | Algorithm | Pseudocode | Dry Run | Code | Strivers A2Z DSA Course](https://youtu.be/ogjf7ORKfd8), [(Article)](https://takeuforward.org/data-structure/merge-sort-algorithm/)
+- [Quick Sort For Beginners | Strivers A2Z DSA Course](https://youtu.be/WIrA4YexLRQ), [(Article)](https://takeuforward.org/data-structure/quick-sort-algorithm/)
