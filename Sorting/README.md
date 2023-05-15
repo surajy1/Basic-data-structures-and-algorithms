@@ -125,6 +125,66 @@ void merge_sort(vector<int>&arr, int n) {
 // TC: O(n * log n), for best and average cases and O(n) for worst cases, where n is the number of elements in the array
 ```
 
+### [Quick Sort](/Sorting/Quick%20Sort.cpp)
+(divide and conquer)
+- Sorts in ascending order or descending order
+- Steps:
+	1. Pick a pivot & place it in its correct order. Pivot can be:
+		- 1st element in the array
+		- last element in the array
+		- median of the array
+		- random element of the array
+	2. Place smaller numbers on the left and larger numbers on the right
+```cpp
+// Quick Sort
+/*
+	Test case:
+	n = 10
+	Input  : 5 7 9 1 3 8 9 4 11 10
+	Output : 1 3 4 5 7 8 9 9 10 11
+*/
+int placingElement(vector<int> &arr, int low, int high) {
+	int pivot = arr[low];
+	int i = low;
+	int j = high;
+
+	while (i < j) {
+		while (arr[i] <= pivot && i <= high - 1) {
+			i++;
+		}
+
+		while (arr[j] > pivot && j >= low + 1) {
+			j--;
+		}
+
+		if (i < j) swap(arr[i], arr[j]);
+	}
+	swap(arr[low], arr[j]);
+	return j; // j becomes the partition index
+}
+
+void qSort(vector<int> &arr, int low, int high) {
+	if (low < high) {
+		int partitionIndex = placingElement(arr, low, high);
+
+		qSort(arr, low, partitionIndex - 1);
+		qSort(arr, partitionIndex + 1, high);
+	}
+}
+
+vector<int> quick_sort(vector<int> &arr) {
+	qSort(arr, 0, arr.size() - 1);
+	return arr;
+}
+
+// TC: O(n * log n)
+// SC: O(1)
+// where n is the number of elements in the array
+// The worst case complexity will be O(N ^ 2) if we end up choosing the largest or smallest element as the pivot always.
+```
+
 ## Reference
 - [Sorting - Part 1 | Selection Sort, Bubble Sort, Insertion Sort | Strivers A2Z DSA Course](https://youtu.be/HGk_ypEuS24?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz)
 - [Merge Sort | Algorithm | Pseudocode | Dry Run | Code | Strivers A2Z DSA Course](https://youtu.be/ogjf7ORKfd8)
+- [Quick Sort For Beginners | Strivers A2Z DSA Course](https://youtu.be/WIrA4YexLRQ)
+- [Quick Sort Algorithm - Article](https://takeuforward.org/data-structure/quick-sort-algorithm/)
