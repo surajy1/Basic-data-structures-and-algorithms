@@ -23,3 +23,32 @@ public:
 	}
 };
 ```
+
+## [Find the Union](https://www.codingninjas.com/studio/problems/sorted-array_6613259)
+Solution 1:
+```cpp
+#include <set>
+vector < int > sortedArray(vector < int > a, vector < int > b) {
+    // Set to store the unique elements
+    set<int> s;
+    vector<int> res;
+
+    int n = a.size(), m = b.size();
+
+    for(int i = 0; i < n; i++) {
+        s.insert(a[i]);
+    }
+    for(int i = 0; i < m; i++) {
+        s.insert(b[i]);
+    }
+
+    for(auto x : s) {
+        res.push_back(x);
+    }
+
+    return res;
+}
+// TC: O(n + m), where n and m are the number of integers in arrays a and b.
+// SC: O(n + m)
+```
+Reference: [Union of Two Sorted Arrays](https://takeuforward.org/data-structure/union-of-two-sorted-arrays/)
