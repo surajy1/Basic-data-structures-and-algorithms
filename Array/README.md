@@ -52,3 +52,37 @@ vector < int > sortedArray(vector < int > a, vector < int > b) {
 // SC: O(n + m)
 ```
 Reference: [Union of Two Sorted Arrays](https://takeuforward.org/data-structure/union-of-two-sorted-arrays/)
+
+## [Longest Subarray with given Sum K(Positives) - tuf](https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399)
+**Problem Statement**: Given an array and a sum k, we need to print the length of the longest subarray that sums to k.
+```cpp
+int longestSubarrayWithSumK(vector<int> a, long long k) {
+    // Write your code here
+    int left = 0, right = 0, n = a.size();
+    long long sum = a[0];
+    int maxLen = 0;
+    
+    while(right < n) {
+        // if sum > k, reduce the subarray from left
+        // until sum becomes less or equal to k:
+        while (left <= right && sum > k) {
+            sum -= a[left];
+            left++;
+        }
+
+        // if sum = k, update the maxLen i.e. answer:
+        if (sum == k) {
+            maxLen = max(maxLen, right - left + 1);
+        }
+
+        // Move forward the right pointer:
+        right++;
+        if (right < n) sum += a[right];
+    }
+    return maxLen;
+}
+// TC: O(2*N), where N is the size of the array.
+```
+Reference: [Longest Subarray with given Sum K(Positives)](https://takeuforward.org/data-structure/longest-subarray-with-given-sum-k/)
+
+
