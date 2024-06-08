@@ -18,8 +18,8 @@ For n = 5
 Code:
 ```cpp
 void pattern1(int n) {
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n; j++) {
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= n; j++) {
 			cout << "* ";
 		}
 		cout << "\n";
@@ -39,8 +39,8 @@ For n = 5
 Code:
 ```cpp
 void pattern2(int n) {
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j <= i; j++) {
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= i; j++) {
 			cout << "* ";
 		}
 		cout << "\n";
@@ -145,15 +145,15 @@ Code:
 void pattern7(int n) {
 	for (int i = 0; i < n; i++) {
 		// space
-		for (int j = 0; j < n - i - 1; j++) {
+		for (int j = 1; j <= n - i; j++) {
 			cout << " ";
 		}
 		// star
-		for (int j = 0; j < 2 * i + 1; j++) {
+		for (int j = 1; j <= 2 * i - 1; j++) {
 			cout << "*";
 		}
 		// space
-		for (int j = 0; j < n - i - 1; j++) {
+		for (int j = 1; j <= n - i; j++) {
 			cout << " ";
 		}
 		cout << "\n";
