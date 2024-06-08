@@ -4,4 +4,4 @@ This repository contains code for most commonly used data structures and algorit
 
 The codes are mainly written in C++
 
-(1. Patterns)[https://github.com/y-suraj/Data-structures-and-algorithms/tree/main/Patterns]
+[1. Patterns](https://github.com/y-suraj/Data-structures-and-algorithms/tree/main/Patterns)
