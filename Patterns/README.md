@@ -460,6 +460,17 @@ void pattern18(int n) {
 	}
 }
 ```
+Better code:
+```cpp
+void pattern18(int n) {
+	for (int i = 1; i <= n; i++) {
+		for (char ch = 'A' + n - i; ch < 'A' + n; ch++) {
+			cout << ch << " ";
+		}
+		cout << "\n";
+	}
+}
+```
 
 ### Pattern 19
 For n = 5
