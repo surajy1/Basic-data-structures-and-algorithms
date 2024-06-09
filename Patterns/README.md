@@ -417,6 +417,28 @@ void pattern17(int n) {
 	}
 }
 ```
+Alternate code:
+```cpp
+void pattern17(int n) {
+	for (int i = 0; i < n; i++) {
+		// space
+		for (int j = 0; j < n - i - 1; j++) {
+			cout << " ";
+		}
+		// characters
+		char ch = 'A';
+		for (int j = 0; j < 2 * i + 1 ; j++) {
+			cout << ch;
+			if (j < i) {
+				ch++;
+			} else {
+				ch--;
+			}
+		}
+		cout << "\n";
+	}
+}
+```
 
 ### Pattern 18
 For n = 5
