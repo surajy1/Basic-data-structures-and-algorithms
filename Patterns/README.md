@@ -366,10 +366,10 @@ void pattern15(int n) {
 ### Pattern 16
 For n = 4
 ```
-A B C D
-A B C
-A B
-A
+A 
+B B 
+C C C 
+D D D D
 ```
 Code:
 ```cpp
