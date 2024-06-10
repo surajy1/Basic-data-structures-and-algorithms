@@ -525,6 +525,33 @@ void pattern19(int n) {
 	}
 }
 ```
+Alternate Code:
+```cpp
+void pattern19(int n) {
+
+	for (int i = 1; i <=  2 * n; i++) {
+		int stars = n - (i - 1);
+		int spaces = 2 * (i - 1);
+		if (i > n) {
+			stars = i - n;
+			spaces = 2 * (2 * n - i);
+		}
+		// stars
+		for (int j = 1; j <= stars; j++) {
+			cout << "*";
+		}
+		// spaces
+		for (int j = 1; j <= spaces; j++) {
+			cout << " ";
+		}
+		// stars
+		for (int j = 1; j <= stars; j++) {
+			cout << "*";
+		}
+		cout << "\n";
+	}
+}
+```
 
 ### Pattern 20
 For n = 5
