@@ -594,7 +594,32 @@ void pattern20(int n) {
 	}
 }
 ```
-
+Alternate Code:
+```cpp
+void pattern20(int n) {
+	for (int i = 1; i <=  2 * n - 1; i++) {
+		int stars = i;
+		int spaces = 2 * (n - i);
+		if (i > n) {
+			stars = 2 * n - i;
+			spaces = 2 * (i - n);
+		}
+		// stars
+		for (int j = 1; j <= stars; j++) {
+			cout << "*";
+		}
+		// spaces
+		for (int j = 1; j <= spaces; j++) {
+			cout << " ";
+		}
+		// stars
+		for (int j = 1; j <= stars; j++) {
+			cout << "*";
+		}
+		cout << "\n";
+	}
+}
+```
 ### Pattern 21
 For n = 5
 ```
